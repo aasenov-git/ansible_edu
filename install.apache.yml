@@ -1,0 +1,22 @@
+---
+
+- hosts: all
+#  become: true
+  tasks:
+
+  - name: update repository index
+    dnf:
+      update_cache: yes
+ 
+  - name: install apache package
+    dnf:
+      name: httpd
+
+  - name: Install nginx
+    dnf:
+      name: nginx
+      state: latest
+
+  - name: Install w3m
+    dnf:
+      name: w3m
