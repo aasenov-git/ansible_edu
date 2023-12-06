@@ -7,16 +7,41 @@
   - name: update repository index
     dnf:
       update_cache: yes
- 
+    when: ansible_distribution in ["Fedora", "RedHat"]
+
+  - name: update repository index
+    apt:
+      update_cache: yes
+    when: ansible_distribution in ["Ubuntu", "Debian"]
+
   - name: install apache package
     dnf:
       name: httpd
+    when: ansible_distribution == "Fedora"
 
   - name: Install nginx
     dnf:
       name: nginx
       state: latest
+    when: ansible_distribution == "Fedora"
 
-  - name: Install w3m
+  - name: Install w3m dnf
     dnf:
       name: w3m
+    when: ansible_distribution in ["Fedora", "RedHat"]
+
+  - name: Install w3m apt
+    apt:
+      name: w3m
+    when: ansible_distribution in ["Ubuntu", "Debian"]
+
+  - name: Install ncdu dnf
+    dnf:
+      name: ncdu
+    when: ansible_distribution in ["Fedora", "RedHat"]
+
+  - name: Install ncdu apt
+    apt:
+      name: ncdu
+    when: ansible_distribution in ["Debian", "Ubuntu"]
+
