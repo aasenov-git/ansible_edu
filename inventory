@@ -1,6 +1,7 @@
-10.0.2.5
-10.0.2.6
-10.0.2.7
-10.0.2.8
-10.0.2.9
-192.168.51.194
+10.0.2.12         var_nginx=nginx var_ncdu=ncdu var_apache=httpd var_php=php var_w3m=w3m
+10.0.2.13         var_nginx=nginx var_ncdu=ncdu var_apache=httpd var_php=php var_w3m=w3m
+10.0.2.14         var_nginx=nginx var_ncdu=ncdu var_apache=httpd var_php=php var_w3m=w3m
+192.168.51.153    var_nginx=nginx var_ncdu=ncdu var_apache=apache2 var_php=libapache2-mod-php var_w3m=w3m
+192.168.51.153    var_nginx=nginx var_ncdu=ncdu var_apache=apache2 var_php=libapache2-mod-php var_w3m=w3m
+192.168.51.194    var_nginx=nginx var_ncdu=ncdu var_apache=httpd var_php=php var_w3m=w3m
+192.168.51.238    var_nginx=nginx var_ncdu=ncdu var_apache=httpd var_php=php var_w3m=w3m
